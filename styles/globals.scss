@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Noto+Sans+JP:wght@500&display=swap');
+
+body {
+  background: linear-gradient(to right, #ece9e6, #ffffff); 
+  color: rgb(40,40,40);
+}
+  body, h1, h2, h3, p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-family: 'Encode Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.red{
+  background-color: red;
+  color: white;
+}
+.purple{
+  background-color: purple;
+  color: white;
+}
+.green{
+  background-color: lightgreen;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 940px;
+  overflow: hidden;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.card{
+  border-radius: 10px;
+  background-color: white;
+}
+
+.card-image img{
+  width: 100%;
+  height: 200px;
+}
+
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.card-content .tag{
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 10px;
+  margin: 1rem 0rem;
+}
+
+.card .user{
+  display: flex;
+  margin: 1rem;
+  padding-bottom: 30px;
+}
+
+.card .user img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+time{
+  font-size: 10px;
+}
+
+@media(max-width: 768px){
+  .container{
+      grid-template-columns: 1fr;
+      justify-items: center;
+      margin: auto;
+      width: 100%;
+  }
+}
+
+main{
+  time{
+    font-size: 20px;
+  }
+}
+
+.article{
+  margin: 50px;
+}
+
+.content{
+  margin-top: 50px;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio{
+  margin: 10px;
+  button{
+    background-color: transparent;
+    padding-top: 12px;
+    padding-bottom:  12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0.2px solid #DED074;
+    color: #DED074;
+    border-radius: 20px;
+
+    &:hover{
+      background-color: #DED074;
+      color: white;
+    }
+  }
+}
+
+.linkedin{
+  margin: 10px;
+  button{
+    background-color: transparent;
+    padding-top: 12px;
+    padding-bottom:  12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0.2px solid #DEA59E;
+    color: #DEA59E;
+    border-radius: 20px;
+
+    &:hover{
+      background-color: #DEA59E;
+      color: white;
+    }
+  }
+}
+
+.github{
+  margin: 10px;
+  button{
+    background-color: transparent;
+    padding-top: 12px;
+    padding-bottom:  12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0.2px solid #9ECEBC;
+    color: #9ECEBC;
+    border-radius: 20px;
+
+    &:hover{
+      background-color: #9ECEBC;
+      color: white;
+    }
+  }
+}
+
+.contact{
+  margin: 10px;
+  button{
+    background-color: transparent;
+    padding-top: 12px;
+    padding-bottom:  12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0.2px solid #C4A7CB;
+    color: #C4A7CB;
+    border-radius: 20px;
+
+    &:hover{
+      background-color:  #C4A7CB;
+      color: white;
+    }
+  }
+}
