@@ -19,7 +19,7 @@ export default function Home({ blogs }) {
                 <Image
                   src={blog.eyecatch.url}
                   alt=""
-                  width={305}
+                  width={`${400}`}
                   height={200}
                 />
               </div>
