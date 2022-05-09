@@ -13,7 +13,6 @@ export default function Home({ blogs }) {
       <div className="container">
         {blogs.map((blog) => (
           <div key={blog.id}>
-            {console.log(blog)}
             <div className="card">
               <div className="card-image">
                 <Image
@@ -29,6 +28,7 @@ export default function Home({ blogs }) {
                   <Link href={`/blogs/${blog.id}`}>{blog.title}</Link>
                 </p>
               </div>
+              <div className="space"></div>
               <div className="user">
                 <Moment format="llll">
                   <h6>{blog.publishedAt}</h6>

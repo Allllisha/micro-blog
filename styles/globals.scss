@@ -41,10 +41,10 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  width: 940px;
   overflow: hidden;
   margin-left: 200px;
   margin-right: 200px;
+  margin-bottom: 100px;
 }
 
 .card{
@@ -193,3 +193,4 @@ main{
     }
   }
 }
+
